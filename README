@@ -1,0 +1,137 @@
+python-crypto
+------------------------------------------
+This is a collection of both secure hash functions (such as MD5 and
+SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal,
+etc.).  The package is structured to make adding new modules easy.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  python-2.5.1-1
+
+Build requirements:
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
+  python-2.5.1-1
+
+Canonical website:
+  http://www.amk.ca/python/code/crypto
+
+Canonical download:
+  http://www.amk.ca/files/python/crypto/
+
+-------------------------------------------
+
+Build instructions:
+  unpack python-crypto-2.0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./python-crypto-2.0.1-X.cygport all
+
+This will create:
+  /usr/src/python-crypto-2.0.1-X-src.tar.bz2
+  /usr/src/python-crypto-2.0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/AES.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/ARC2.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/ARC4.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/Blowfish.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/CAST.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/DES.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/DES3.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/IDEA.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/RC5.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/XOR.dll
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/__init__.py
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/__init__.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Cipher/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Hash/HMAC.py
+  /usr/lib/python2.5/site-packages/Crypto/Hash/HMAC.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Hash/HMAC.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Hash/MD2.dll
+  /usr/lib/python2.5/site-packages/Crypto/Hash/MD4.dll
+  /usr/lib/python2.5/site-packages/Crypto/Hash/MD5.py
+  /usr/lib/python2.5/site-packages/Crypto/Hash/MD5.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Hash/MD5.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Hash/RIPEMD.dll
+  /usr/lib/python2.5/site-packages/Crypto/Hash/SHA.py
+  /usr/lib/python2.5/site-packages/Crypto/Hash/SHA.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Hash/SHA.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Hash/SHA256.dll
+  /usr/lib/python2.5/site-packages/Crypto/Hash/__init__.py
+  /usr/lib/python2.5/site-packages/Crypto/Hash/__init__.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Hash/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/AllOrNothing.py
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/AllOrNothing.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/AllOrNothing.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/Chaffing.py
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/Chaffing.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/Chaffing.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/__init__.py
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/__init__.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Protocol/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/DSA.py
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/DSA.pyc
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/DSA.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/ElGamal.py
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/ElGamal.pyc
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/ElGamal.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/RSA.py
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/RSA.pyc
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/RSA.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/__init__.py
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/__init__.pyc
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/pubkey.py
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/pubkey.pyc
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/pubkey.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/qNEW.py
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/qNEW.pyc
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/qNEW.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Util/RFC1751.py
+  /usr/lib/python2.5/site-packages/Crypto/Util/RFC1751.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Util/RFC1751.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Util/__init__.py
+  /usr/lib/python2.5/site-packages/Crypto/Util/__init__.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Util/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Util/number.py
+  /usr/lib/python2.5/site-packages/Crypto/Util/number.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Util/number.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Util/randpool.py
+  /usr/lib/python2.5/site-packages/Crypto/Util/randpool.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Util/randpool.pyo
+  /usr/lib/python2.5/site-packages/Crypto/Util/test.py
+  /usr/lib/python2.5/site-packages/Crypto/Util/test.pyc
+  /usr/lib/python2.5/site-packages/Crypto/Util/test.pyo
+  /usr/lib/python2.5/site-packages/Crypto/__init__.py
+  /usr/lib/python2.5/site-packages/Crypto/__init__.pyc
+  /usr/lib/python2.5/site-packages/Crypto/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/test.py
+  /usr/lib/python2.5/site-packages/Crypto/test.pyc
+  /usr/lib/python2.5/site-packages/Crypto/test.pyo
+  /usr/lib/python2.5/site-packages/pycrypto-2.0.1-py2.5.egg-info
+  /usr/share/doc/Cygwin/python-crypto-2.0.1.README
+  /usr/share/doc/python-crypto-2.0.1/ChangeLog
+  /usr/share/doc/python-crypto-2.0.1/LICENSE
+  /usr/share/doc/python-crypto-2.0.1/README
+  /usr/share/doc/python-crypto-2.0.1/TODO
+
+------------------
+
+Port Notes:
+
+----- version 2.0.1-2 -----
+Rebuilt for python-2.5.
+
+----- version 2.0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

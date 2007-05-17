@@ -1,0 +1,7 @@
+inherit distutils
+
+DESCRIPTION="Python cryptographic algorithms and protocols module"
+HOMEPAGE="http://www.amk.ca/python/code/crypto"
+SRC_URI="http://www.amk.ca/files/python/crypto/${ORIG_PN}-${PV}.tar.gz"
+
+

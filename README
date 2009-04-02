@@ -5,15 +5,16 @@ SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal,
 etc.).  The package is structured to make adding new modules easy.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  python-2.5.1-1
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libgmp3-4.2.4-2
+  python-2.5.4-10
 
 Build requirements:
-  cygwin-1.5.24-2
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gcc-core-3.4.4-3
-  python-2.5.1-1
+(besides corresponding devel packages)
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
 
 Canonical website:
   http://www.amk.ca/python/code/crypto
@@ -88,6 +89,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/Crypto/PublicKey/__init__.py
   /usr/lib/python2.5/site-packages/Crypto/PublicKey/__init__.pyc
   /usr/lib/python2.5/site-packages/Crypto/PublicKey/__init__.pyo
+  /usr/lib/python2.5/site-packages/Crypto/PublicKey/_fastmath.dll
   /usr/lib/python2.5/site-packages/Crypto/PublicKey/pubkey.py
   /usr/lib/python2.5/site-packages/Crypto/PublicKey/pubkey.pyc
   /usr/lib/python2.5/site-packages/Crypto/PublicKey/pubkey.pyo
@@ -116,21 +118,17 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/Crypto/test.pyc
   /usr/lib/python2.5/site-packages/Crypto/test.pyo
   /usr/lib/python2.5/site-packages/pycrypto-2.0.1-py2.5.egg-info
-  /usr/share/doc/Cygwin/python-crypto-2.0.1.README
-  /usr/share/doc/python-crypto-2.0.1/ChangeLog
-  /usr/share/doc/python-crypto-2.0.1/LICENSE
-  /usr/share/doc/python-crypto-2.0.1/README
-  /usr/share/doc/python-crypto-2.0.1/TODO
+  /usr/share/doc/python-crypto/ChangeLog
+  /usr/share/doc/python-crypto/LICENSE
+  /usr/share/doc/python-crypto/README
+  /usr/share/doc/python-crypto/TODO
 
 ------------------
 
 Port Notes:
 
------ version 2.0.1-2 -----
-Rebuilt for python-2.5.
-
------ version 2.0.1-1 -----
-Initial release for Cygwin.
+----- version 2.0.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

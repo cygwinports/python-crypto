@@ -1,0 +1,13 @@
+ORIG_PN="pycrypto"
+inherit distutils
+
+NAME="python-crypto"
+VERSION=2.6
+RELEASE=2
+CATEGORY="Python"
+SUMMARY="Python module of encryption and hash functions"
+DESCRIPTION="This is a collection of both secure hash functions (e.g. MD5 and
+SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
+The package is structured to make adding new modules easy."
+HOMEPAGE="http://www.dlitz.net/software/pycrypto/"
+SRC_URI="http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/${ORIG_PN}-${PV}.tar.gz"

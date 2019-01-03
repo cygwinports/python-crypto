@@ -1,13 +1,22 @@
-ORIG_PN="pycrypto"
-inherit distutils
+inherit python-wheel
 
 NAME="python-crypto"
-VERSION=2.6
-RELEASE=2
+VERSION=2.6.1
+RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python module of encryption and hash functions"
 DESCRIPTION="This is a collection of both secure hash functions (e.g. MD5 and
 SHA), and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
 The package is structured to make adding new modules easy."
 HOMEPAGE="http://www.dlitz.net/software/pycrypto/"
-SRC_URI="http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-${VERSION}.tar.gz"
+SRC_DIR="pycrypto-${VERSION}"
+PATCH_URI="
+	https://src.fedoraproject.org/cgit/rpms/python-crypto.git/plain/python-crypto-2.4-optflags.patch
+	https://src.fedoraproject.org/cgit/rpms/python-crypto.git/plain/python-crypto-2.4-fix-pubkey-size-divisions.patch
+	https://src.fedoraproject.org/cgit/rpms/python-crypto.git/plain/pycrypto-2.6.1-CVE-2013-7459.patch
+	https://src.fedoraproject.org/cgit/rpms/python-crypto.git/plain/pycrypto-2.6.1-CVE-2018-6594.patch
+"
+
+BUILD_REQUIRES+=" libgmp-devel"
+

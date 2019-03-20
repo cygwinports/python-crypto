@@ -2,7 +2,7 @@ inherit python-wheel
 
 NAME="python-crypto"
 VERSION=2.6.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Python"
 SUMMARY="Python module of encryption and hash functions"
 DESCRIPTION="This is a collection of both secure hash functions (e.g. MD5 and
